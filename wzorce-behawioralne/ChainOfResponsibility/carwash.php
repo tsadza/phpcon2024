@@ -131,6 +131,5 @@ $carwash->handle($vehicle);
 $vehicle = new Vehicle('Opel');
 $carwash
   ->setNext($shampoo)
-  ->setNext($rinse)
   ->setNext($checkout);
 $carwash->handle($vehicle);
