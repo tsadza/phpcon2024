@@ -60,3 +60,5 @@ $company->addEmployee($developers);
 $company->addEmployee($managers);
 
 echo $company->getSalary();
+
+print_r($company);
