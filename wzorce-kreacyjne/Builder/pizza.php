@@ -26,7 +26,7 @@ class Pizza
   }
 }
 
-abstract class PizzaBuilder implements PizzaRecipe
+class PizzaBuilder implements PizzaRecipe
 {
   protected $pizza;
 
