@@ -62,10 +62,10 @@ $coffee = new SimpleCoffee();
 echo $coffee->getCost(); // 10
 echo $coffee->getDescription(); // Simple coffee
 
-$coffee = new MilkDecorator($coffee);
-echo $coffee->getCost(); // 12
-echo $coffee->getDescription(); // Simple coffee, milk
 
 $coffee = new WhippedCreamDecorator($coffee);
 echo $coffee->getCost(); // 17
 echo $coffee->getDescription(); // Simple coffee, milk, whipped cream
+$coffee = new MilkDecorator($coffee);
+echo $coffee->getCost(); // 12
+echo $coffee->getDescription(); // Simple coffee, milk
