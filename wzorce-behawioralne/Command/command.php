@@ -75,6 +75,7 @@ class Order
 
 
 $order = new Order('ABC 11');
+
 $open = new OpenOrderCommand($order);
 $process = new ProcessOrderCommand($order);
 $close = new CloseOrderCommand($order);
